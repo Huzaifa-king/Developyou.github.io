@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.extra-div h2, .servicediv h2{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 20px 0 5px 0;
+    word-spacing: 4px;
+    line-height: 1.1;
+}
+
+i{
+    color: rgb(37, 126, 228);
+}
+
+/* *****************************actual CSS Start***************************** */
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* @keyframes header-section{  
+    from{top:-100px}
+    to{bottom:0px}
+} */
+
+.header-section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../pics/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    clip-path: polygon(100% 0%, 100% 70%, 50% 100%, 0 70%, 0 0);
+    /* animation-name: header-section;
+    animation-duration: 5s;
+    animation-timing-function: ease; */
+    opacity: 0.8;
+    transition-duration: 1s;  
+
+}
+
+.header-section:hover{
+    opacity: 1.0;
+    clip-path: polygon(100% 0%, 100% 50%, 50% 100%, 0 50%, 0 0);
+    transition-timing-function: ease-out; 
+}
+
+
+
+.header-section:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+    background: linear-gradient(to right, #1e2699 0%, #3cbccd 0%, #16d4f6 100%);
+}
+
+ .navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+     /* background: linear-gradient(to right, #991e1e 0%, #cd593c 0%, #f63016 100%); */
+} 
+
+.nav-item a{
+    color: rgb(255, 255, 255)!important;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-item a:hover{
+    color: rgb(0, 0, 0)!important;
+    font-weight: bold;
+    /* text-shadow:0 0 20px yellow ; */
+    font-family: 'Poppins', sans-serif;
+    /* color: #50d1c0!important; */
+}
+
+.navbar-brand{
+    /* text-shadow:0 0 20px rgb(0, 0, 0) ; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.header-section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-buttons a{
+    border: 1px solid white;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 orange;
+    font-weight: bold;
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* **********************extra div start************************* */
+
+.extra-div{
+    width: 100%;
+    height: auto;
+    margin: 100px 0px;
+    text-align: center;
+    background: white;
+    border: medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+/* **********************extra div End************************* */
+
+
+/* **********************Offer section Start************************* */
+
+.serviceoffers{
+    background: #f7f7f9;
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.headings p{
+    color: grey;
+}
+
+.languages h1{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6d6c6c;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    height: 0.6rem!important;
+    margin-bottom: 25px!important;
+}
+/* **********************Offer section End************************* */
+
+
+/* **********************Service Section Start************************* */
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+}
+
+.pricing:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+} 
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card{
+    transition: 0.4s ease;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: white!important;
+    padding: 25px 0px!important;
+    text-transform: uppercase;
+    color: #606060;
+}
+
+.card-body{
+    padding: 30px 0px!important;
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: #606060;
+}
+
+.card-footer{
+    background: white!important;
+    padding: 30px 0px!important;
+}
+
+.card-footer a{
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.card:hover .card-footer a{
+    color: #fff;
+    background: #50d1c0;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.card:hover .card-header, .card:hover .money{
+    color: #50d1c0;
+}
+/* **********************Service Section End************************* */
+
+
+/* **********************Our client Response Start************************* */
+
+.happyclient{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0px;
+}
+
+.box{
+    text-align: center;
+    border:1px solid rgba(0,0,0,0.2);
+    /* box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3); */
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box h2{
+    font-size: 1rem;
+    color: #666666;
+}
+
+.box h1{
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.box:hover{
+    background: #16c9f6;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.8);
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0px;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+/* **********************Our client Response End************************* */
+
+
+/* **********************Contact us start************************* */
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 0px;
+    position: relative;
+}
+
+.contact:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(340deg, #16c9f6 55%, #fff 0%);
+    z-index: -1;
+}
+
+
+.form-button button{
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 12px 35px;
+    color: transparent;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    font-weight: bold; 
+    background: transparent; 
+    border: none;
+}
+
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    box-shadow: 0,0,20px,0 rgb(0, 0, 0, 0.3);
+}
+
+::placeholder{
+    font-size: 0.80rem;
+}
+/* **********************Contact us End************************* */
+
+/* **********************subscribe start************************* */
+
+.newslatter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news-input{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+    min-height: 45px;
+}
+
+.input-group-text{
+    border-radius: 0px 100px 100px 0px!important;
+    min-width: 150px;
+    min-height: 45px;
+    background: #16c9f6!important;
+    color: #fff!important;
+    font-weight: bold!important;
+}
+
+.input-group-text:hover{
+    background: #0b677e!important;
+    color: rgba(255, 255, 255, 0.739)!important;
+    cursor: pointer;
+}
+/* **********************subscribe End************************* */
+
+/* **********************Footer Start************************* */
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 20px 0px;
+    background: #00abff;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footersection p{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.footersection li{
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footersection h3{
+   text-transform: uppercase;
+   color: #fff;
+   margin-bottom: 25px;
+   font-size: 1.2rem!important;
+   font-weight: bold;
+   text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+   text-align: center;
+}
+
+.footer-link a:hover{
+    color: rgb(214, 210, 210);
+    text-decoration: none;
+}
+
+.footer-main{
+    margin-top: 10px;
+    background: #00abff;
+    color: white;
+}
+
+.footer-main a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-main a:hover{
+    color: rgb(214, 210, 210);
+    text-decoration: none;
+}
+
+
+/* **********************Footer End************************* */
+
+/* **********************Scrolltop button Statr************************* */
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: white;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.8s ease;
+}
+
+#myBtn:hover{
+    background: black;
+}
+
+/* **********************Scrolltop button End************************* */
+
+/* **********************Media Queries************************* */
+
+@media(max-width: 768px){
+    .nav-item{
+        text-align: left!important;
+    }
+
+    .pricing, .happyclient, .contact{
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0px;
+    }
+
+    .contact p{
+        padding: 0px 50px;
+    }
+
+    .footer-div li{
+        text-align: left;
+    }
+
+    .footer-div{
+        margin: 30px 0px;
+    }
+}
+
+
+
+
+
